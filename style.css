@@ -72,7 +72,22 @@ section {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
+	flex-grow: 1;
 	flex-wrap: wrap;
+	align-items: stretch;
+}
+
+section.inner {
+	margin: 0vw;;
+
+	box-sizing: border-box;
+	flex: 1;
+	flex-basis: 48%;
+
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	justify-content: space-between;
 }
 
 article {
@@ -84,7 +99,19 @@ article {
 	text-align: justify;
 
 	box-sizing: border-box;
+	flex: 0;
 	flex-basis: 48%;
+}
+
+article.wide {
+	flex: 1;
+}
+
+article.empty {
+	background-color: transparent;
+	border: 0vw;
+	padding: 0vw;
+	margin: 0vw;
 }
 
 va {
