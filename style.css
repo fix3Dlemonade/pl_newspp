@@ -114,6 +114,10 @@ article.empty {
 	margin: 0vw;
 }
 
+li {
+	font-size: 1.6vw;
+}
+
 va {
 	background-color: transparent;
 	color: lightgrey;
