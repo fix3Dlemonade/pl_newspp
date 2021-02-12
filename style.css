@@ -1,0 +1,141 @@
+/* Author: Kacper Woźniak */
+
+body {
+	background-color: whitesmoke;
+	font-size: 2vw;
+}
+
+.endLine {
+	border-top: 0.2vw dashed black;
+	border-bottom: 0.2vw solid black;
+
+	display: flex;
+	flex-direction: row;
+}
+
+header > .endLine {
+	border-top: 0.2vw solid black;
+	border-bottom: 0.2vw dashed black;
+}
+
+.endLine > div {
+	width: 100%;
+}
+
+.endLine > div.r {
+	text-align: left;
+}
+
+.endLine > div.l {
+	text-align: right;
+}
+
+.logo {
+	height: 24vw;
+
+	display: block;
+	margin: auto;
+}
+
+rw {
+	background-color: white;
+	color: red;
+}
+
+wr {
+	background-color: red;
+	color: white;
+}
+
+ht {
+	font-size: 8vw;
+	text-align: left;
+	margin: auto;
+	margin-left: 4vw;
+}
+
+h1 {
+	text-align: justify;
+	padding: 1vw;
+	border-top: 0.4vw outset black;
+	border-bottom: 0.4vw outset black;
+}
+
+p {
+	text-indent: 4vw;
+}
+
+section {
+	background-color: white;
+	margin: 1vw;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+
+article {
+	background-color: white;
+	border-left: 0.2vw solid black;
+	border-top: 0.2vw dotted black;
+	padding-left: 2vw;
+	margin: 0.8vw;
+	text-align: justify;
+
+	box-sizing: border-box;
+	flex-basis: 48%;
+}
+
+va {
+	background-color: transparent;
+	color: lightgrey;
+	text-align: right;
+	font-size: 1.2vw;
+
+	display: block;
+}
+
+sa {
+	background-color: transparent;
+	color: grey;
+	text-align: center;
+	font-size: 0.8vw;
+
+	display: block;
+}
+
+@media screen and (max-width: 900px) {
+	article {
+		flex-basis: 100%;
+	}
+}
+
+@media screen and (min-width: 1600px) {
+	body {
+		font-size: 1.8vw;
+		padding: 1vw;
+		margin: 1% 10%;
+	}
+
+	.logo {
+		height: 18vw;
+	}
+
+	ht {
+		margin-left: 1vw;
+	}
+
+	article {
+		flex-basis: 45%;
+	}
+
+	html {
+		background-color: grey;
+	}
+}
+
+#title {
+	margin-top: 1em;
+	display: flex;
+}
