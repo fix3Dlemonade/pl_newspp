@@ -144,7 +144,8 @@ sa {
 	background-color: transparent;
 	color: lightgrey;
 	text-align: center;
-	font-size: 0.8vw;
+	font-size: 1vw;
+	padding-top: 0.2vw;
 
 	display: block;
 }
@@ -152,6 +153,10 @@ sa {
 @media screen and (max-width: 900px) {
 	article {
 		flex-basis: 100%;
+	}
+
+	.atr {
+		font-size: 1vw;
 	}
 }
 
